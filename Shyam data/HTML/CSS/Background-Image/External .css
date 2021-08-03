@@ -1,0 +1,21 @@
+body
+{
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%,100%
+        
+}
+h1.first
+{
+    color: red;
+}
+p.first
+{
+    color: coral;
+    font-size: 20px;
+}
+p.sec
+{
+    color: aquamarine;
+    font-size: 30px;
+}

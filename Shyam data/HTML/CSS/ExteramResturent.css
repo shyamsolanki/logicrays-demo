@@ -1,0 +1,64 @@
+body
+{
+    background-image: url(Laxmi-Vilas-Palace-Banner1.jpg);
+    background-repeat: no-repeat;
+}
+h1.first
+{
+    color:red;
+    font-size: 40px;
+}
+h1.sec
+{
+    color:chartreuse;
+    font-size: 27px; 
+}
+.h2
+{
+    color:blue
+}
+p.Mystyle1
+{
+    color:cyan;
+    font-size: 15px;
+}
+p.Mystyle2
+{
+  color: cyan;
+    font-size: 15px;
+}
+p.Mystyle3
+{
+    color: cyan;
+    font-size: 15px;
+}
+p.Mystyle4
+{
+    color: black;
+    font-size: 15px;
+}
+p.Mystyle5
+{
+    color: black;
+    font-size: 15px;
+}
+h3.Hadding
+{
+    color: blue;
+    font-size: 19px;
+}
+.ol
+{
+    color: white;
+    font-size: 13px;
+}
+.li
+{
+    color:floralwhite;
+    font-size: 15px;
+}
+.ul
+{
+    color: black;
+    font-size: 14px;
+}
