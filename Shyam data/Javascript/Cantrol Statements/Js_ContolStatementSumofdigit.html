@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Sum Of Digit For While</title>
+        <script>
+            var number,lastdigit,sum;
+            
+            number=parseInt(prompt("Enter Number"));
+            document.write("<br>Number is:"+number);
+            
+            //sum of digit
+            sum=0;
+            while(number>0)
+                {
+                    lastdigit=number%10;
+                    alert("current lastdigit digit i get:"+lastdigit);
+                    sum=lastdigit+sum;
+                    alert("current sum that i get:"+sum);
+                    number=Math.floor(number/10);
+                }
+            document.write("<br>Sum of Digit From Number Is:"+sum);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
