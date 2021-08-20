@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Calculator Using branching Statement-Switch</title>
+        <script>
+            var number1,number2;
+            
+            number1=67.5;
+            number2=43.9;
+            
+            document.write("<br>Number:"+number1);
+            document.write("<br>Number:"+number2);
+            
+            document.write("<br> Enter '+','A','a':Add");
+            document.write("<br>Enter '-','S','s':Sub");
+            document.write("<br>Enter '*','M','m':Multi");
+            document.write("<br>Enter '/','D','d':Div");
+            
+            //Enter Your Choice Number
+            
+            var choice;
+            choice='M';
+            
+            
+            switch(choice)
+                {
+                    case'+':
+                    case'A':
+                    case'a':    
+                        var add=number1+number2;
+                        document.write("<br>Addition is:"+add);
+                        break;
+                        
+                    case'-':
+                    case'S':
+                    case's':   
+                        var sub=number1-number2;
+                        document.write("<br>Substriction is:"+sub);
+                        break;
+                        
+                    case'*':
+                    case'M':
+                    case'm':
+                        var multi=number1*number2;
+                        document.write("<br>Multiplication is:"+multi);
+                        break;
+                        
+                    case'/':
+                    case'D':
+                    case'd':    
+                        var div=number1/number2;
+                        document.write("<br>Division is:"+div);
+                        break;
+                }
+        </script>
+    </head>
+    <body>
+    </body>
+          
+           
+</html>

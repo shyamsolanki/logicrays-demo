@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            
+            var choice;
+            choice=parseFloat(prompt("1.for-Area of Circle 2.for-Circumference of Circle 3.for-Farinite to Celcius conversion"));
+            
+            switch(choice)
+                {
+                        case 1:
+                                var radius=parseFloat(prompt("Enter Radius"));
+                                var circle=3.14*radius*radius;
+                                alert("area of circle:"+circle);
+                                break;
+                        case 2:
+                                var radius=parseFloat(prompt("Enter Radius"));
+                                var Circumference=2*3.14*radius;
+                                alert("Circumference of Circle:"+Circumference);
+                                break;
+                        case 3:
+                                var fahrenheit=parseFloat(prompt("Enter Fahrenheit"));
+                                var celsius=(fahrenheit-32)*7;
+                                alert("Fahrenheit to Celsius conversion:"+celsius);
+                                break;
+                       default:
+                                alert("Invalid Choice Number");
+                }
+                                                         
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

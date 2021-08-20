@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Accept Positive,Negative,Zero</title>
+        <script>
+            var number;
+             number=parseInt(prompt("Enter Number"));
+            
+            var choice;
+              choice=parseInt(prompt("Enter1 For Square,Enter2 For Cube,Enter3 For Positive,Negative,Zero"));
+            
+            switch(choice)
+                {
+                    case 1:
+                        var square=number * number;
+                        alert("Square Of Numner:"+square);
+                        break;
+                        
+                    case 2:
+                        var cube=number * number * number;
+                        alert("Circle Of Number:"+cube);
+                        break;
+                        
+                    case 3:
+                        var val;
+                        if(number>0)
+                        {
+                          val=("This Number is Positive");
+                        }
+                        else if(number<0)
+                        {
+                          val=("This Number is Negative");  
+                        }
+                        else
+                        {
+                          val=("This Number is Zero");  
+                        }
+                        alert("This Number is:"+val);
+                        break;
+                    default:
+                        alert("Invalid Choice Number");
+                    }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

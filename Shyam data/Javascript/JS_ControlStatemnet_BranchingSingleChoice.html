@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Calculator Sigle Choice</title>
+        <script>
+            var number1,number2;
+            number1=87;
+            number2=26;
+            
+            document.write("First Number is:"+number1);
+            document.write("<br>Second Number is:"+number2);
+            
+            document.write("<br>Enter 1st Number:Add");
+            document.write("<br>Enter 2st Number:Sub");
+            document.write("<br>Enter 3st Number:Multi");
+            document.write("<br>Enter 4st Number:Div");
+            
+            var choice;
+            choice=2;
+            
+            switch(choice)
+                {
+                    case 1:
+                        var add=number1+number2;
+                        document.write("<br>Addition is:"+add);
+                        break;
+                        
+                    case 2:
+                        var sub=number1-number2;
+                        document.write("<br>Addition is:"+sub);
+                        break;
+                        
+                    case 3:
+                        var multi=number1*number2;
+                        document.write("<br>Addition is:"+multi);
+                        break;
+                        
+                    case 4:
+                        var div=number1/number2;
+                        document.write("<br>Addition is:"+div);
+                        break;
+                    default:
+                        document.write("<br>Invalid Choice Number");
+                        break;
+                }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
