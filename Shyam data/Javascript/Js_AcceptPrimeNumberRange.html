@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            var number,prime;
+            
+            number=parseInt(prompt("Enter Number"));
+            
+            for(i=2;i<=number;i++){
+                prime=1;
+                
+                for(j=2;j<=i/2;j++){
+                    if(i%j==0){
+                    prime=0;
+                    break;
+                    }
+                }
+                if(prime==1){
+                    document.write(i);
+                }
+            }
+                
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

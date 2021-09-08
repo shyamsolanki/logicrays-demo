@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Image change demo using innerHTML-DOM</title>
+        <script>
+            function onBulb_function()
+            {
+                document.getElementById("demo").src="pic_bulbon.gif";
+            }
+        function offBulb_function()
+            {
+                document.getElementById("demo").src="pic_bulboff.gif";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Image Change Demo</h1>
+        <img src="pic_bulboff.gif" alt="on bulb" id="demo" onmouseover="onBulb_function()" onmouseout="offBulb_function()">
+        <br><br>
+          <script>
+              document.write("Mouse Over Bulb On");
+              document.write("<br>Mouse Out Bulb Off");
+              
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            var choice;
+            
+            choice=parseFloat(prompt("Enter 1 for Visit Google Page,Enter 2 For Visit Logicrays Pages,Enter 3 For Visit Wikipedia"));
+            
+            switch(choice)
+                {
+                    case 1:
+                        function Google()
+                        {
+                            window.location="https://www.google.co.in/";
+                        }
+                    case 2:
+                        function LogicRays()
+                        {
+                            window.location="https://www.logicraysacademy.com/";
+                            setTimeout(5000)
+                        }
+                    case 3:
+                        function Wikipedia()
+                        {
+                            window.location="https://www.wikipedia.org/";
+                        }
+                    default:
+                        {
+                            alert("Invalid Choice");
+                        }
+                }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="Redirection Action" value="Clicke to visit page" onclick="function Google();function LogicRays();function Wikipedia()">
+        </form>
+    </body>
+</html>

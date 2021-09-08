@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Acceptin Cube-Squre Text-Box</title>
+        <script>
+            function demo1()
+            {
+                var number;
+                number=parseInt(document.getElementById("enumber").Value);
+                document.getElementById("squre").value=number*number;
+            }
+            function demo2()
+            {
+               var number; 
+                number=parseInt(document.getElementById("enumber").Value);
+                document.getElementById("cube").value=number*number*number;
+            }
+        </script>
+        <style>
+            .table1
+            {
+                background-color: dodgerblue;
+                border-style: hidden;
+            }
+            .table2
+            {
+               background-color: skyblue;
+                border-style: hidden; 
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <form>
+            <table border="1" colspacing="0">
+                <tr class="table1">
+                    <td>Enter Number</td>
+                    <td><input type="text" id="enumber" name="EntrNumber"></td>
+                </tr>
+                <tr class="table2">
+                    <td>Squre Number</td>
+                    <td><input type="text" id="squre" name="Rsqure"></td>
+                </tr>
+                <tr class="table2">
+                    <td>Cube Number</td>
+                    <td><input type="text" id="cube" name="Rcube"></td>
+                <tr class="table1" colspan="2">
+                    <td></td>
+                    <td >
+                        <input type="button" name="ad_action" value="find result" onclick="demo1();demo2()">
+                        <input type="reset" name="reset_action" value="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            //function defination
+            function printMessage()
+            {
+                document.write("<br>Inside parameterless function printMessage()");
+                document.write("<br>My Name Is Shyam");
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            /*
+             printMessage();
+             printMessage();
+             printMessage();
+             printMessage();
+             */
+            
+            var i,range;
+            range=parseInt(prompt("How many times do you want to call function"));
+            
+            for(i=1;i<=range;i++)
+            {
+                document.write("<br>Calling function no:"+i);
+                printMessage();
+            }
+        </script>
+    </body>
+</html>

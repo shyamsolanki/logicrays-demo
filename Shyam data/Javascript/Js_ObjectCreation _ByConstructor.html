@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Object Creation by Constructor Function</title>
+    </head>
+    <body>
+        <script>
+            class Employe
+                
+                    constructor(EmpId,EmpName,Salary)
+                     {
+                       document.write("<br>Inside Constructor Block");
+                       this.EmpId=EmpId;
+                       this.EmpName=EmpName;
+                       this.Salary=Salary;
+                       document.write("<br>End of Constructor Block");
+                     }
+                   displayEmployeDetails()
+                    {
+                     document.write("<br>Employe Id:"+this.EmpId);
+                     document.write("<br>Employe Name:"+this.EmpName);
+                     document.write("<br>Employe Salary:"+this.Salary);
+                    }
+                }
+                
+                var emp1=new Employe(11,"Ajay",20000);
+                emp1.displayEmployeDetails();
+            
+             class Student
+                
+                    constructor(StuId,StuName,StuMarks)
+                     {
+                       document.write("<br>Inside Constructor Block");
+                       this.StuId=StuId;
+                       this.StuName=StuName;
+                       this.StuMarks=StuMarks;
+                       document.write("<br>End of Constructor Block");
+                     }
+                   displayStudentDetails()
+                    {
+                     document.write("<br> Student Id:"+this.StuId);
+                     document.write("<br> Student Name:"+this.StuName);
+                     document.write("<br> Student Marks:"+this.StuMarks);
+                    }
+                }
+                
+                var stu1=new Student(11,"Ajay",68);
+                stu1.displayStudentDetails();
+        </script>
+    </body>
+</html>

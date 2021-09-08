@@ -1,0 +1,73 @@
+<html>
+    <head>
+            <title>Accepting Input using textbox </title>
+        <script>
+         function calculationDemo()
+            {
+                var n1,n2;
+                n1=parseFloat((document.frmcalc.fnumber.value);
+                n2=parseFloat((document.frmcalc.snumber.value);
+                
+                 document.frmcalc.tadd.value=n1+n2;
+                 document.frmcalc.tsub.value=n1-n2;
+                 document.frmcalc.tmulti.value=n1*n2;
+                 document.frmcalc.tdiv.value=n1/n2;
+                
+            }
+        </script>
+        <style>
+            .mystyle1
+            {
+                text-align: center;
+                background-color: #fc984a;
+            }
+            .mystyle2
+            {
+                background-color: #fcebdb;
+                text-align: left;
+            }
+        </style>
+    </head>
+<body>
+    <center>
+    <form name=" c">
+    <table border="1" colspacing="0">
+        <tr class="mystyle1">
+            <td colspan="2">CALCULATION OPERATION</td>
+        </tr>
+          <tr class="mystyle2">
+              <td> Enter First number</td>
+              <td> <input type="text" id="fid" name="fnumber" placeholder="Enter Number"></td>
+          </tr>
+          <tr class="mystyle2">
+              <td > Enter Second number</td>
+              <td> <input type="text" id="sid" name="snumber" placeholder="Enter Number"></td>
+          </tr>
+          <tr class="mystyle2">
+              <td > ADDITION</td>
+              <td> <input type="text" id="aid" name="tadd"></td>
+          </tr>
+          <tr class="mystyle2">
+              <td> SUBSTRACTION</td>
+              <td> <input type="text" id="subid" name="tsub"></td>
+          </tr>
+              <tr class="mystyle2">
+              <td> MULTIPLICATION</td>
+              <td> <input type="text" id="mid" name="tmulti"></td>
+          </tr>
+          <tr class="mystyle2">
+              <td>DIVISION</td>
+              <td> <input type="text" id="did" name="tdiv"></td>
+          </tr>
+          <tr class="mystyle1">
+              <td colspan="2"> 
+                  <input type="button" name="add_action" value="Find Result" onclick="calculationDemo()">
+                  <input type="reset" name="reset_action" value="RESET ALL">
+              </td>
+          </tr>
+     
+    </table>
+    </form>
+    </center>
+</body>
+</html>
