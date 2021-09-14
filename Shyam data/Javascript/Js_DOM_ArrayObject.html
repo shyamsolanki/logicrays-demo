@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            var i;
+            var range;
+            range=parseInt(prompt("How Mnay Array Element Do you Want"));
+             
+            var a=new Array(range);
+            for(i=0;i<range;i++)
+                {
+                    a[i]=parseInt(prompt("Enter Element Number"+(i+1)+":"));
+                }
+       
+            for(i=0;i<range;i++)
+                {
+                    document.write("<br> a["+i+"]:"+a[i]);
+                }
+            var sum;
+            for(i=0;i<range;i++)
+                {
+                    sum=sum+a[i];
+                }
+              document.write("<br>Sum Of all Array Element are:"+sum);
+            
+           
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

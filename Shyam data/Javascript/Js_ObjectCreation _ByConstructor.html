@@ -5,7 +5,7 @@
     <body>
         <script>
             class Employe
-                
+                {
                     constructor(EmpId,EmpName,Salary)
                      {
                        document.write("<br>Inside Constructor Block");
@@ -26,25 +26,29 @@
                 emp1.displayEmployeDetails();
             
              class Student
+                 {
                 
                     constructor(StuId,StuName,StuMarks)
                      {
-                       document.write("<br>Inside Constructor Block");
+                       document.writeln("<br>Inside Constructor Block");
                        this.StuId=StuId;
                        this.StuName=StuName;
                        this.StuMarks=StuMarks;
-                       document.write("<br>End of Constructor Block");
+                       document.writeln("<br>End of Constructor Block");
                      }
                    displayStudentDetails()
                     {
-                     document.write("<br> Student Id:"+this.StuId);
-                     document.write("<br> Student Name:"+this.StuName);
-                     document.write("<br> Student Marks:"+this.StuMarks);
+                     document.writeln("<br><br> Student Id:"+this.StuId);
+                     document.writeln("<br> Student Name:"+this.StuName);
+                     document.writeln("<br> Student Marks:"+this.StuMarks);
                     }
                 }
                 
                 var stu1=new Student(11,"Ajay",68);
                 stu1.displayStudentDetails();
+            
+                var stu2=new Student(123,"Ravi",94);
+                stu2.displayStudentDetails();
         </script>
     </body>
 </html>

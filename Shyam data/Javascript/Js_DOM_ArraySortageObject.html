@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>DOM-Object Array Sortage</title>
+        <script type="text/javascript">
+            var i,j;
+            var range;
+             range=parseInt(prompt("How many array elemnts do you want"));
+      
+    //declaration of array
+    var a=new Array(range);
+       
+    //accepting elemts from user into the array
+    for(i=0;i<range;i++)
+    {
+        a[i]=parseInt(prompt("Enter element no "+(i+1)+":"));
+    }
+      
+     //travesing of array or display elemnts from array
+    document.write("<br>Array before sorting");
+    for(i=0;i<range;i++)
+    {
+        document.write("<br> a["+i+"]:"+a[i]);
+    }
+            
+                for(i=0;i<a.length;i++)
+                    {
+                        for(j=1+i;j<a.length;j++)
+                            {
+                                if(a[i]>a[j])
+                                {
+                                    var t=a[i];
+                                     a[i]=a[j];
+                                        a[j]=t;    
+                                }
+                            }
+                     }
+            
+    //travesing of array or display elemnts from array
+    document.write("<br>Array after sorting-asce");
+    for(i=0;i<range;i++)
+    {
+        document.write("<br>"+a[i]);
+    }
+            
+    //travesing of array or display elemnts from array
+    document.write("<br>Array after sorting-desc");
+    for(i=range-1;i>=0;i--)
+    {
+        document.write("<br>"+a[i]);
+    }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
