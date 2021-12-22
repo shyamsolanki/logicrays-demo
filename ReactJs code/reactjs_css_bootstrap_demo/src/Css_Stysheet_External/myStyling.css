@@ -1,0 +1,13 @@
+#one {
+  background-color: rgb(255, 136, 0);
+  color: rgb(0, 255, 221);
+  padding: 10px;
+  font-family: Arial;
+  text-align: center;
+}
+.two{
+  color: orangered;
+  font-family: Arial;
+  font-size: 35px;
+  text-align: center;
+}
